@@ -12,4 +12,6 @@
 4. ECC
 5. BIP 32&39
 
-- Turing Complete
+- Turing Complete  
+
+- Wallets
