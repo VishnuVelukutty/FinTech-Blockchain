@@ -1,0 +1,54 @@
+BLOCKCHAIN
+
+A trade or action that takes place without any third person i.e directly/one-to-one
+
+A network of computer that have the same history of transactions and no one person holds any kind of data also it validated and encrypted make it secure 
+while also ensuring that the transaction happened
+
+WORKING :
+A miner takes/gets a block from a pool and tries to compute its nonce value
+until the hash of data i.e prev hash + nonce + transactions gives out a very small hash to the entire block This is decided by the algorithm 
+
+If it matches then the block is added and broadcasted to others 
+
+Proof of work : 
+once the hash is calculated it can be verified that the calculations done are legit 
+
+Double spending :
+This relates to longer chain trust where it is possible some block maybe added to yours before others get it then it will create a fork containing 2 links to each of the blocks when anyone of the fork reaches a longer chain compared to other then latter is discarded and the other is considered as legitmate blocks
+
+
+UTXO (Unspent Transaction output) :
+In typical Banking the aggregate of all the funds you own is displayed but in blockchain each transaction is seperate entity rather than a single entity 
+
+Key Signing
+Public and Private/Secret Key pair
+The sender signs the data with private key 
+The reciever uses the senders public key to validate the document
+
+Merkle Tree 
+The Tree does not store data but instead stores hashes of data therby reducing historyless changes and if one has to do changes the ancestors will update 
+For verifying only the root hash has to be validated
+
+
+Types of node 
+Full Nodes : 
+They maintain a complete copy of the Blockchain ledger. These nodes download and store a copy of every transaction and block on the network, which allows them to independently verify the entire Blockchain history. 
+
+Light Nodes :
+SPV (Simplified Payment Verification) nodes, are a more lightweight version of full nodes.
+Light nodes rely on full nodes for transaction validation and block verification.
+
+
+Miner Nodes :
+Miner nodes are responsible for verifying transactions and adding new blocks to the Blockchain. These nodes perform complex calculations to solve mathematical problems that allow them to create new blocks and receive rewards in the form of cryptocurrency.
+
+Number BITCOINS Left to mine
+
+The total cap of 21 million and around 19 million bitcoins have been mined (as of 2023) and are in circulation, leaving approximately 2 million left to be mined. Estimated that all bitcoins will be mined by the year 2140
+
+Halving events : Block Rewards
+2012 : 25 BTC 
+2016 : 12.5 BTC
+2020 : 6.25 BTC
+2024 : 3.125 BTC
