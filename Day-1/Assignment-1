@@ -56,6 +56,7 @@ RIPE Message Digest are typically represented as 40-digit hexadecimal numbers. 1
 ECC focuses on pairs of public and private keys in the context of RSA achieves one-way encryption of things like emails, data, and software using prime factorization.  bases its approach to public key cryptographic systems on how elliptic curves are structured algebraically over finite fields.
 
 5. BIP 32&39
+Bitcoin Improvement Proposal-32 using ECC 
 
 - Turing Complete
 Turing Complete refers to a machine that, given enough time and memory along with the necessary instructions, can solve any computational problem, no matter how complex. The term is normally used to describe modern programming languages as most of them are Turing Complete
