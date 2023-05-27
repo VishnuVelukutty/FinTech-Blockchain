@@ -1,4 +1,3 @@
--------------------------------------------------------------------
 ## Index
 -------------------------------------------------------------------
 ### 1. [Blockchain](#blockchain)
@@ -33,7 +32,8 @@ The Miner does the calculation to find the *Nonce* value to find the hash for th
 
 If two blocks are mined simultaneously a fork is created then it is validated by longest Chain and any transactions in the shorter chain are not encorporated into the chain and it might be mined afterwards and incoporated to other chain.
 
-[Reference Video](https://www.youtube.com/watch?v=qcuc3rgwZAE)
+[Reference Video](https://www.youtube.com/watch?v=qcuc3rgwZAE)  
+[Back](#index)
 ___________________________________________________________________
 
 ## Cryptography-Encryption
@@ -71,7 +71,9 @@ The way in which symbols are mapped onto bytes, e.g. in the rendering of a parti
 2. 
 
 [Overview Reference](https://www.garykessler.net/library/crypto.html#skc)
-[]()
+[]()  
+[Back](#index)
+
 -------------------------------------------------------------------
 ## Bitcon
 -------------------------------------------------------------------
@@ -125,7 +127,12 @@ need to provide proof of work which require computations therby increases time i
 - no miners 
 
 4. Corda
-- an open permissioned blockchain as it shares data only with the parties involved in the transaction (blockchain transmits to all nodes)
+- an open permissioned blockchain as it shares data only with the parties involved in the transaction (blockchain transmits to all nodes)  
+[Back](#index)
+
 
 ## Wallets
+[Back](#index)
+
 ## Etherum
+[Back](#index)
