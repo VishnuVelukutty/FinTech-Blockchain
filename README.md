@@ -1,7 +1,4 @@
-## Repo contains summaries of the following topics 
-## Click on the link to directly access the md file 
 -------------------------------------------------------------------
-
 ## Index
 -------------------------------------------------------------------
 ### 1. [Blockchain](#blockchain)
