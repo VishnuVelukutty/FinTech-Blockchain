@@ -2,28 +2,35 @@
 -------------------------------------------------------------------
 ### 1. [Blockchain](#blockchain)
 - Working
+
 ### 2. [Cryptography-Encryption](#cryptography-encryption)
 - Public key
 - Hashing Algorithm
 - Encoding
 
 ### 3. [Wallets](#wallets)
+- Working
+- Types
+
 ### 4. [Bitcon](#bitcon)
 - Working
 - Turing Complete
+- Proof of Work (PoW)
 - Double Spending
 - Merkle Tree
 - UTXO 
 - DLT
 
 ### 5. [Etherum](#etherum)
-- 
+- Proof of Stake (PoS)
+- PoW v/s PoS
 
 
--------------------------------------------------------------------
+___________________________________________________________________
 
 ## Blockchain
 ___________________________________________________________________
+
 A *Decentralized* and *Distributed* system where all parties can view the entire records or transactions done.  
 
 This means that no one party holds all the data and since all parties involved has complete copy of the trasnacations performed thereby preventing courruption.  
@@ -68,9 +75,9 @@ The first is about studying methods to keep a message secret between two parties
 
     Uses one key for encryption and another for decryption; also called asymmetric encryption. Primarily used for authentication, non-repudiation, and key exchange.  
 
-    1. ECC and ECSDA
-    2. BIP 32 & 39 (Based on ECC)
-    3. 
+    1. ECC
+    2. ECSDA
+    3. BIP 32 & 39 (Based on ECC)
 
 - *HASHING ALGORITHMS*  
 
@@ -96,9 +103,33 @@ The first is about studying methods to keep a message secret between two parties
 []()  
 [Back](#index)
 
--------------------------------------------------------------------
+___________________________________________________________________
+## [Wallets](https://www.youtube.com/watch?v=AQO7KePXUEQ)  
+___________________________________________________________________
+
+Used for creating and storing for the public and private keys of an user, interacting with blockchain since the cryptocurrencies are basically linked to the user's private key, monitors balances and enables to send or recieve cryptocurrencies.  
+
+
+Types :
+1. [HD Wallets](https://www.youtube.com/watch?v=A1Pl5hYHXiI)
+Hierarchical deterministic (HD) wallets generate a seed or mnemonic phrase which is string of common phrase to regenate the private keys. The same seed and can be used to create multiple unique addresses.
+
+1. Hot Wallet  
+Creates and store private keys online e.g. Desktop and Mobile wallets which are connected to internet (HOT). Less secure since it is always connected to the internet.
+
+2. Cold Wallet  
+Creates and store private keys offline also know as Hardware wallet and needs to connected in order to perform transactions.
+More secure since the hardware device can be disconnected from  the internet.
+
+
+
+
+[Back](#index)
+
+
+___________________________________________________________________
 ## Bitcon
--------------------------------------------------------------------
+___________________________________________________________________
 - Working  
 
     Based on the principles of the blockchain. When a transaction is done it is signed by the sender using wallets and miners work on it to find the hash. 
@@ -112,13 +143,16 @@ The first is about studying methods to keep a message secret between two parties
     2020 : 6.25 BTC  
     2024 : 3.125 BTC  
 
-- Turing Complete  
+- [Turing Complete](https://www.bitstamp.net/learn/blockchain/what-is-turing-complete/)  
 
     Turing Complete refers to a machine that, given enough time and memory along with the necessary instructions, can solve any computational problem, no matter how complex. The term is normally used to describe modern programming languages as most of them are Turing Complete.
 
+- [Proof of Work](https://www.youtube.com/watch?v=3EUAcxhuoU4)
+    Used as a consensus algorithm to validate and add new blocks. Miners competes for finiding the solution and if the miner finds the solution(i.e block hash with certain conditions) it is then verified by other Miners for authenticity.
+
 - Double Spending  
 
-    Refers to use of the same coin used to pay for different entities. Validations are performed in order to check if the transaction is possible. If both transactions are validated simultaneously then a fork is created and *Longest Chain* is preffered (*Six-confirmation wait* since it's unlikely to happen for more than six times). 
+    Refers to use of the same coin used to pay for different entities. Validations are performed in order to check if the transaction is possible. If both transactions are validated simultaneously then a fork is created and *Longest Chain* is preffered (*Six-confirmation wait* since it's unlikely to happen for more than six times aka Consenus Mechanism). 
 
 - [Merkle Tree](https://www.youtube.com/watch?v=n6nEPaE7KZ8) 
 
@@ -134,15 +168,28 @@ The first is about studying methods to keep a message secret between two parties
 
     where H1234 is root hash. If the array size is not 2<sup>n</sup> then the last element is duplicated and compute its hash.  
 
+                  H1234565'6'
+                  /        \
+             H1234         H565'6'
+            /    \        /    \
+          H12     H34   H56    H5'6'
+          / \     / \    / \    / \
+        H1  H2  H3  H4  H5 H6  H5' H6'
  
 
 
 
 
-- UTXO 
+- [UTXO](https://www.youtube.com/watch?v=0_5wb5agLqE) 
+    Unspent Transaction Output defined as the amount of bitcoin assigned to any address.
+    For e.g In a Bank when you deposit some amount like a *5 x 100 rupee notes*, the bank will register it in their system and when you withdraw *500 rs.* the exact same *note* will not be given to you or it maybe a combination of 100+200+200 or a single 500 rs note.
+    This in contrast to personal piggy bank when you accumulate
+    the same amount *5 x 100 rupee notes* when withdraw from it you will get the same *5 x 100 rupee notes*.
+    This is how things work in cryptocurrency, the wallet always shows the aggregate of all the transaction amount but under the hood it is UTXO i.e a single 0.9 BTC is not fundamentally equal to 0.1 BTC sent 9 times.
 
 
-- DLT vs Bitcoin  
+
+- [DLT vs Bitcoin](https://www.youtube.com/watch?v=JjMWrXqsrUs)  
 
     DLT : Distributed ledger 
     TPS : number of  transactions that a network is capable of processing each second 
@@ -187,19 +234,26 @@ The first is about studying methods to keep a message secret between two parties
 [Back](#index)
 
 
-## [Wallets](https://www.youtube.com/watch?v=AQO7KePXUEQ)  
-Used for creating and storing for the public and private keys of an user, interacting with blockchain since the cryptocurrencies are basically linked to the user's private key, monitors balances and enables to send or recieve cryptocurrencies.  
-
-Types :
-1. Hot Wallet  
-Creates and store private keys online e.g. Desktop and Mobile wallets which are connected to internet (HOT). Less secure since it is always connected to the internet.
-
-2. Cold Wallet  
-Creates and store private keys offline also know as Hardware wallet and needs to connected in order to perform transactions.
-More secure since the hardware device can be disconnected from  the internet.
-
-
-[Back](#index)
 
 ## Etherum
+
+- [Proof of Stake](https://www.youtube.com/watch?v=YudpU58uYuM)
+    Since Proof of Work requires all miners to run their computation all time in order to earn rewards this increases power consumptions, Proof of Stake on the other hand requires less work and energy since this method involves a lottery (pusedo-random election process) system wherein the  miner is randomly selected by the blockchain and then that miner performs the validation and recieves rewards.
+
+    In order to ensure that no malicious activity takes place the miner has to *Stake* a certain amount of its cryptocurrency as a security. If the miner performs a malicious activity then the miner is penalized and certain reward is given to the spotter. 
+
+    To improve the chances of being a miner one can stake more coins. The miner can also be selected on the basis of reputations or age.  
+
+    This method only pays transaction fees.
+
+-[EVM](https://www.quicknode.com/guides/ethereum-development/getting-started/what-is-the-ethereum-virtual-machine-evm/)
+The Ethereum Virtual Machine (EVM) is the computation engine for Ethereum that manages the state of the blockchain and enables smart contract functionality. The EVM is contained within the client software.
+
+In transaction execution, the EVM executes tasks (e.g., function calls to a smart contract) by interpreting the instructions in Opcodes (machine instructions at a low level); however, the data is formatted in bytecode. To get the data into bytecode, you can use a programming language such as Solidity (i.e., the native programming language for smart contracts) to compile and deploy the smart contract using bytecode. 
+
+i.e Solidity code -> Byte code -> Opcode 
+
+- [Nodes]()
+
+ 
 [Back](#index)
